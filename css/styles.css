@@ -165,6 +165,8 @@ display: block;
   background-size: cover;
   max-width: 1440px;
   margin: 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero .container {
