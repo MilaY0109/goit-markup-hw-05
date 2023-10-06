@@ -474,7 +474,7 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-networks {
-margin-right: 80px;
+
 }
 
 .footer-networks-text {
@@ -516,10 +516,14 @@ margin-bottom: 16px;
     background-color: #31d0aa;
   } 
 
-  .footer-input-area {
-    display: flex;
+  .footer-form-container {
+    margin-left: 80px;
+    
   }
-
+.footer-form {
+  display: flex;
+  gap: 24px;
+}
 .footer-form-text {
   color: #FFF;
 font-size: 16px;
@@ -530,35 +534,35 @@ margin-bottom: 16px;
 }
 
 .footer-form-input {
-  margin-right: 24px;
   border-radius: 4px;
-border: 1px solid  #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+border: 1px solid  #FFFFFF;
+ox-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 width: 264px;
 height: 40px;
 background: transparent;
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 
 .footer-form-input::placeholder {
   padding-left: 16px;
-  color: var(--WHITE, #FFF);
+  color: #FFFFFF;
 font-family: Roboto;
 font-size: 12px;
 font-style: normal;
 font-weight: 400;
-line-height: 24px; /* 200% */
-letter-spacing: 0.48px;
+line-height: 1.5;
+letter-spacing: 0.04em;
 
 }
 .footer-form-btn {
-  display: inline-flex;
+  display: flex;
 padding: 8px 24px;
 justify-content: center;
 align-items: center;
 border-radius: 4px;
 background: #4D5AE5;
 border: none;
-width: 165px;
+min-width: 165px;
 height: 40px;
 color: #FFF;
 text-align: center;
@@ -566,9 +570,11 @@ font-size: 16px;
 font-weight: 500;
 line-height: 1.5;
 letter-spacing: 0.04em;
-gap: 16px;
 }
 
+.form-btn-icon {
+  margin-left: 16px;
+}
 
 
 
