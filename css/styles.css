@@ -649,10 +649,10 @@ cursor: pointer;
    .close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
-   .close-btn-icon:hover  {
+   .close-btn-icon:hover {
     fill: #ffffff;
    }
-   .close-btn-icon:focus{
+   .close-btn-icon:focus {
     fill: #ffffff;
    } 
    
@@ -807,6 +807,7 @@ text-decoration-line: underline;
     justify-content: center;
     fill: transparent;
     margin-right: 8px;
+
   }
 
   .modal-checkbox:checked + .checkbox-label > .custom-checkbox {
@@ -814,6 +815,5 @@ text-decoration-line: underline;
     border: none;
     fill: #f4f4fd;
   }
-  .checkbox-icon {
-    ill: none;
-  }
+  
+  
