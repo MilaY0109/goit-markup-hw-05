@@ -638,20 +638,22 @@ cursor: pointer;
    
    .form-close-btn:hover {
     background-color: #404bbf;
+    border: none;
    }
 
    .form-close-btn:focus {
     background-color: #404bbf;
+    border: none;
    }
 
    .close-btn-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
    }
    .close-btn-icon:hover  {
-    fill: #ffffff
+    fill: #ffffff;
    }
    .close-btn-icon:focus{
-    fill: #ffffff
+    fill: #ffffff;
    } 
    
 
@@ -745,8 +747,7 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1)
     border: 1px solid rgba(46, 47, 66, 0.40);
     background-color: transparent;
     border-radius: 4px;
-    padding-top: 8px;
-    padding-left: 16px;
+    padding: 8px 16px;
     color: rgba(46, 47, 66, 0.40);
     font-size: 12px;
     font-weight: 400;
@@ -781,6 +782,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 400;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
    }
 
    .checkbox-label-policy {
@@ -796,4 +798,22 @@ text-decoration-line: underline;
     width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
-   }
+    border-radius: 2px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    fill: transparent;
+    margin-right: 8px;
+  }
+
+  .modal-checkbox:checked + .checkbox-label > .custom-checkbox {
+    background-color: #404bbf;;
+    border: none;
+    fill: #f4f4fd;
+  }
+  .checkbox-icon {
+    ill: none;
+  }
